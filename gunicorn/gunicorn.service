@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=ubuntu
 Group=www-data
-WorkingDirectory=/home/ubuntu/mini project
+WorkingDirectory=/home/ubuntu/miniproject
 ExecStart=/home/ubuntu/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/miniproject/DNF/DNF.sock DNF.wsgi:application
 
        
